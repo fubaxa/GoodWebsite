@@ -1,0 +1,240 @@
+body {
+  	font-family: Arial, sans-serif;
+  	margin: 0;
+  	padding: 0;
+	background-color: #202020;
+	min-width: 1080px;
+    overflow-x: auto; 
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #404040;
+    font-size: x-large;
+    padding: 0em;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+	display: flex;
+    align-items: center;
+    justify-content: space-between; 
+	border-bottom: #505050 solid 1px;
+    overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background: linear-gradient(270deg, #151515, #202020, #404040, #151515);
+    background-size: 600% 600%;
+    animation: headerGradientMove 10s ease infinite;
+    opacity: 0.5; /* Adjust for desired effect */
+    border-bottom: #505050 solid 1px;
+    border-radius: 0 0 1em 1em;
+}
+
+@keyframes headerGradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#title {
+	margin-top: 0.2em;
+	margin-left: 10em;
+	color: #fff;
+	font-size: 0.8em;
+}
+
+#menu{
+	margin-top: 0.2em;
+	margin-right: 15em;
+	border: #505050 solid 1px;
+	padding: 0.7em 0.6em;
+	border-radius: 0.5em;
+	background-color: #202020;
+}
+
+#menu img {
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	margin-right: 0.2em;
+	padding-bottom: 0.1em;
+}
+
+#menu a {
+    color: #808080;
+    text-decoration: none;
+    margin: 0 0.2em;
+    font-size: 0.9em;
+    padding: 0.4em 0.6em;
+    border-radius: 0.3em;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#menu a:hover {
+    background-color: #151515;
+	color: #fff;
+}
+
+#main {
+	margin: 7.5% 10% 0;
+	padding: 2em;
+}
+
+#intro {
+	text-align: center;
+	border-radius: 1em;
+	border: #505050 solid 1px;
+	background-color: #202020;
+	padding: 2em;
+	margin: 0.5em 0;
+	/* transition: background-color 0.3s ease; */
+}
+
+#intro h1 {
+	font-size: 3em;
+	color: darkturquoise;
+	margin-bottom: 0.2em;
+	text-shadow: 0 0 24px rgba(64, 224, 208, 0.3);
+	font-weight: 750;
+}
+
+#intro h2 {
+	font-size: 2.2em;
+	margin-bottom: 1em;
+	color: #fff;
+}
+
+#intro p {
+	color:#aaa;
+	padding: 0 12.5em;
+	line-height: 1.7;
+}
+
+#second {
+	display: flex;
+	justify-content: space-between;
+}
+
+#mods {
+	border-radius: 1em;
+	border: #606060 solid 1px;
+	background-color: #202020;
+	padding: 0.5em 2em 1em 2em;
+	margin: 2em 0 0.5em 0;
+}
+
+#mods h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	color: #fff;
+}
+
+#mods p {
+	color: #aaa;
+	line-height: 1.7;
+}
+
+#mods .mod {
+    margin: 0.6em 0;
+    padding: 0.8em 1em;
+    border: #606060 solid 1px;
+    border-radius: 0.5em;
+    background-color: #303030;
+    display: flex;           
+    align-items: center;     
+    gap: 1em;
+	justify-content: space-between;             
+}
+
+#mods .mod h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+#mods .mod p {
+    margin: 0;
+    color: lightblue;
+}
+
+#button {
+	border-radius: 1em;
+	border: #606060 solid 1px;
+	background-color: #202020;
+	padding: 0.5em 2em 1em 2em;
+	margin: 2em 2% 0.5em 2%;
+}
+
+#button h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	color: #fff;
+}
+
+#button p {
+	color: #aaa;
+	line-height: 1.7;
+}
+
+#button button {
+	margin: 0.6em 0;
+	padding: 0.8em 1em;
+	border: #606060 solid 1px;
+	border-radius: 0.5em;
+	background-color: #303030;
+	color: #fff;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#button button:hover {
+	background-color: #151515;
+}
+
+#cat {
+	border-radius: 1em;
+	border: #606060 solid 1px;
+	background-color: #202020;
+	padding: 0.5em 2em 1em 2em;
+	margin: 2em 0 0.5em 0;
+	max-width: 30%;
+}
+
+#cat h2 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	color: #fff;
+}
+
+#cat p {
+	color: #aaa;
+	line-height: 1.7;
+}
+
+#cat img {
+	max-width: 50%;
+	border-radius: 1em;
+}
+
+#footer {
+  	background-color: #404040;
+  	padding: 1em;
+  	text-align: center;
+	margin-top: 40em;
+	color: #fff;
+	border-top: #606060 solid 1px;
+}
