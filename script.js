@@ -5,7 +5,7 @@ function render() {
     switch (currentPage) {
         case "#home":
             main.innerHTML = `
-            <div id="intro">
+            <div id="intro" class="section">
                 <h1>JDC </h1>
                 <h2>Welcome to the best website of all time! (not really)</h2>
                 <p>This is a really basic website, made as a test for my coding abilities. 
@@ -15,7 +15,7 @@ function render() {
                 doing backups, or will start doing backups soon."</p>
             </div>
             <div id="second">
-                <div id="mods">
+                <div id="mods" class="section">
                     <h2>Website Moderators</h2>
                     <p>Our dedicated team of moderators maintains the website.</p>
                     <div class="mod">
@@ -35,16 +35,23 @@ function render() {
                         <p>Content Reviewer</p>
                     </div>
                 </div>
-                <div id="button">
+                <div id="button" class="section">
                     <h2>Useless Button</h2>
                     <p>Click the button below to see what happens.</p>
                     <button onclick="alert('You clicked the button!')">Click Me!</button>
                 </div>
-                <div id="cat">
+                <div id="cat" class="section">
                     <h2>Random Cat</h2>
                     <p>Please enjoy this cat picture.</p>
                     <img src="images/cat_photo.jpg" alt="Random Cat">
                 </div>
+            </div>
+            <div id="space" class="section">
+                <h1>Quite literally a space for nothing.</h1>
+                <p>This section is intentionally left blank.</p>
+                <p>Isn't that fascinating?</p>
+                <p>Why? You may ask.</p>
+                <p>A better question would be: Why not?</p>
             </div>
             `;
             break;

@@ -40,7 +40,6 @@ body {
     animation: headerGradientMove 10s ease infinite;
     opacity: 0.5; /* Adjust for desired effect */
     border-bottom: #505050 solid 1px;
-    border-radius: 0 0 1em 1em;
 }
 
 @keyframes headerGradientMove {
@@ -89,18 +88,12 @@ body {
 }
 
 #main {
-	margin: 7.5% 10% 0;
+	margin: 5% 10% 0;
 	padding: 2em;
 }
 
 #intro {
 	text-align: center;
-	border-radius: 1em;
-	border: #505050 solid 1px;
-	background-color: #202020;
-	padding: 2em;
-	margin: 0.5em 0;
-	/* transition: background-color 0.3s ease; */
 }
 
 #intro h1 {
@@ -128,7 +121,7 @@ body {
 	justify-content: space-between;
 }
 
-#mods {
+.section {
 	border-radius: 1em;
 	border: #606060 solid 1px;
 	background-color: #202020;
@@ -171,10 +164,6 @@ body {
 }
 
 #button {
-	border-radius: 1em;
-	border: #606060 solid 1px;
-	background-color: #202020;
-	padding: 0.5em 2em 1em 2em;
 	margin: 2em 2% 0.5em 2%;
 }
 
@@ -206,11 +195,6 @@ body {
 }
 
 #cat {
-	border-radius: 1em;
-	border: #606060 solid 1px;
-	background-color: #202020;
-	padding: 0.5em 2em 1em 2em;
-	margin: 2em 0 0.5em 0;
 	max-width: 30%;
 }
 
@@ -230,11 +214,23 @@ body {
 	border-radius: 1em;
 }
 
+#space h1 {
+	color: #fff;
+	text-align: center;
+	margin: 3% 0 5% 0;
+}
+
+#space p {
+	color: #aaa;
+	text-align: center;
+	margin-bottom: 15%;
+}
+
 #footer {
   	background-color: #404040;
   	padding: 1em;
   	text-align: center;
-	margin-top: 40em;
+	margin-top: 3%;
 	color: #fff;
 	border-top: #606060 solid 1px;
 }
