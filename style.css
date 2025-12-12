@@ -270,6 +270,55 @@ body {
 	text-decoration: none;
 }
 
+#projects h1 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 3%;
+	font-size: 300%;
+}
+
+#little-note {
+	color: #aaa;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.project{
+	color: #aaa;
+	font-size: 100%;
+	border: #606060 dotted 1px;
+	padding: 2%;
+	margin: 2%;
+	border-radius: 1em;
+	background-color: #202020;
+	transition: 0.3s ease;
+	max-width: 60%;
+	min-width: 23%;
+}
+
+.project:hover {
+	border: #808080 solid 1px;
+	background-color: #303030;
+	cursor: pointer;
+	transform: translateY(-3px);
+}
+
+.project h2 {
+	color: #ddd;
+	font-size: 200%;
+	margin-bottom: 4%;
+	text-align: center;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+
+#text-game {
+	max-width: 100%;
+}
+
 #footer {
   	background-color: #404040;
   	padding: 1em;

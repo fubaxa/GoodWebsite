@@ -56,7 +56,76 @@ function render() {
             `;
             break;
         case "#work":
-            main.innerHTML = "<h1>List Page</h1><p>Here is a list of items.</p>";
+            main.innerHTML = `
+            <div id="projects" class="section">
+                <h1>My Projects</h1>
+                <p id="little-note">Click on any project to view its repository on GitHub!!!</p>
+                <div class="row">
+                    <button class="project" onclick="onclick="window.open('https://github.com/fubaxa/GoodWebsite', '_blank')">
+                        <h2>Portfolio Website</h2>
+                        <p>
+                        This very website you are currently on! Built using HTML, CSS, and JavaScript, 
+                        this portfolio website showcases my skills and projects as a developer.
+                        It features a clean and modern design, with easy navigation and responsive layout.
+                        The website is still a work in progress, but with the addition of new projects and skills, it will get
+                        updated regularly.
+                        </p>
+                    </button>
+                    <button class="project" onclick="window.open('https://github.com/fubaxa/2DRPGgame', '_blank')">
+                        <h2>2D RPG game</h2>
+                        <p>
+                        My attempt at creating a 2D RPG game using Python and Pygame. The game features a player character that can move around a map,
+                        "some" npcs (I managed to make them appear on the map but there are no iteractions implemented yet),
+                        and basic collision detection. The game is very early in development, but it's been a fun learning experience so far
+                        and I'm proud of what I've accomplished.
+                        </p>
+                    </button>
+                </div>
+                <div class="row">
+                    <button id="text-game" class="project" onclick="window.open('https://github.com/fubaxa/text-based-game', '_blank')">
+                        <h2>Text-based Story Game</h2>
+                        <p>
+                        A very simple game with no graphics, just text on the screen. The player makes choices that affect the outcome of
+                        the story. Even though the game sounds really basic, and it is, I actually put quite a bit of effort into making 
+                        it the best it can be. I added a couple of hand-made graphics for idling screens, and I haven't done much with the story,
+                        but that can be fixed really quick. The game uses a separate story-tree file to store the story data,
+                        which is accessed by a singular number variable that tracks the player's current position in the story. I 
+                        am overall quite proud of this project, I like how it turned out. From all my previous projects, this one
+                        has probably the cleanest and most organized code, while also looking decent. Because how can you make white text on 
+                        black background look bad?
+                        </p>
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="project" onclick="alert('Sorry! This project is lost media and there are no backups available. :(')">
+                        <h2>An online library system</h2>
+                        <p>
+                        A web-based library management system built using HTML, CSS, PHP, and SQL for database management.
+                        The system allows users to browse and search for books and authors, while administrators can manage book inventory and user accounts.
+                        Unfortunately, my access to the project files has been lost with my exit from my previous school,
+                        and I have made no backups of the project, apart from the very early stages of development that are missing most of the functionality.
+                        </p>
+                    </button>
+                    <button class="project" onclick="window.open('https://github.com/fubaxa/honestlyjustsomechess', '_blank')">
+                        <h2>Chess app</h2>
+                        <p>
+                        A simple chess application built using Python and Pygame. It allows users to play chess against each other on the same device.
+                        I tried implementing an AI opponent, but it turned out to be too complex for my current skill level, so I left it out for now.
+                        <br><br>
+                        Also turns out I forgot to upload the files to github!!! So for the next few weeks the repository will be empty.
+                        </p>
+                    </button>
+                    <button class="project" onclick="window.open('https://github.com/fubaxa/react-website', '_blank')">
+                        <h2>React Website</h2>
+                        <p>
+                        A little side project where I try to experiment with React. I haven't done much with it yet,
+                        but when I do I will probably implement some of the stuff into this website as well. React is a framework
+                        which allows for easier and more efficient web development, so I want to learn it properly.
+                        </p>
+                    </button>
+                </div>
+            </div>
+            `;
             break;
         case "#about":
             main.innerHTML = `
