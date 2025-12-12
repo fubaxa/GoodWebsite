@@ -61,7 +61,7 @@ function render() {
                 <h1>My Projects</h1>
                 <p id="little-note">Click on any project to view its repository on GitHub!!!</p>
                 <div class="row">
-                    <button class="project" onclick="onclick="window.open('https://github.com/fubaxa/GoodWebsite', '_blank')">
+                    <button class="project" onclick="window.open('https://github.com/fubaxa/GoodWebsite', '_blank')">
                         <h2>Portfolio Website</h2>
                         <p>
                         This very website you are currently on! Built using HTML, CSS, and JavaScript, 
